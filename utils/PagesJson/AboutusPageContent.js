@@ -131,12 +131,12 @@ export const AboutusPageContent = {
             {
                 imageSRC: PartnerImage12
             },
-            {
-                imageSRC: PartnerImage13
-            },
-            {
-                imageSRC: PartnerImage14
-            }
+            // {
+            //     imageSRC: PartnerImage13
+            // },
+            // {
+            //     imageSRC: PartnerImage14
+            // }
         ]
     },
 
