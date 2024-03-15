@@ -21,7 +21,7 @@ export const metadata = {
   icons: {
     icon: "./favicon.ico"
   },
-  image:'https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg',
+   image:'https://rigveditonnetlify.netlify.app/public/images/bannerimage.png',
   robots: {
     index: false,
     follow: true,
@@ -40,12 +40,12 @@ export const metadata = {
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
     images: [
       {
-        url: "https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg",
+        url: "https://rigveditonnetlify.netlify.app/public/images/bannerimage.png",
         width: 800,
         height: 600,
       },
       {
-        url: "https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg",
+        url: "https://rigveditonnetlify.netlify.app/public/images/bannerimage.png",
         width: 1800,
         height: 1600,
         alt: 'Rigved',
