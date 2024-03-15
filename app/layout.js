@@ -26,12 +26,12 @@ export const metadata = {
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_OG_PURPOSE}/images/namascapeLogo.png`,
+        url: "https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: `${process.env.NEXT_PUBLIC_OG_PURPOSE}/images/namascapeLogo.png`,
+        url: "https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg",
         width: 1800,
         height: 1600,
         alt: 'Rigved',
