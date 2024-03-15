@@ -23,8 +23,31 @@ const geologica = Geologica({
 // })
 
 export const metadata = {
-  title: "Rigved IT",
-  description: "A Rigved Tech Company",
+  title: "Rigved ",
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
+  siteName: 'Rigved',
+  icons: {
+    icon: "./favicon.ico"
+  },
+  openGraph: {
+    title: 'Rigved ',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_OG_PURPOSE}/images/namascapeLogo.png`,
+        width: 800,
+        height: 600,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_OG_PURPOSE}/images/namascapeLogo.png`,
+        width: 1800,
+        height: 1600,
+        alt: 'Rigved',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  }
 };
 
 export default function RootLayout({ children }) {
