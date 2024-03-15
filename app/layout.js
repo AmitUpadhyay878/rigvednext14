@@ -21,6 +21,20 @@ export const metadata = {
   icons: {
     icon: "./favicon.ico"
   },
+  image:'https://d19cx7uv5wsln6.cloudfront.net/assets/images/ogimages/solution/e-learning-app-development.jpg',
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Rigved ',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
