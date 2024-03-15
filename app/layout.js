@@ -4,7 +4,7 @@ import "./globals.scss";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 //import localFont from 'next/font/local'
-import bannerimage from '../public/images/bannerimage.png'
+
 import {DolceVitaHeavy} from '../utils/customFonts'
 
 const geologica = Geologica({
@@ -40,12 +40,12 @@ export const metadata = {
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
     images: [
       {
-        url: bannerimage,
+        url:"../public/images/bannerimage.png",
         width: 800,
         height: 600,
       },
       {
-        url: bannerimage,
+        url: "../public/images/bannerimage.png",
         width: 1800,
         height: 1600,
         alt: 'Rigved',
