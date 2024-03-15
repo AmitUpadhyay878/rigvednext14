@@ -14,14 +14,6 @@ const geologica = Geologica({
   variable: "--font-geologica"
 })
 
-// const dolceVitaHeavy = localFont({
-//   src: [
-//     {
-//       path: './DolceVitaHeavy-Bold.woff',
-//     },
-//   ],
-// })
-
 export const metadata = {
   title: "Rigved ",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
