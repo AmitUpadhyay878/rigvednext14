@@ -1,0 +1,39 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.titleWrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @media (max-width: $breakpoint-tablet) {
+      gap:10px;
+    }
+    & > *{
+      width:50%;
+      @media (max-width: $breakpoint-tablet) {
+        width:100%;
+      }
+    }
+    .titleContentLeft{
+      h2{
+        max-width:700px;
+        @media (max-width: $breakpoint-tablet) {
+          max-width:100%;
+        }
+      }
+    }
+    .titleContentRight{
+      width:49%;
+      margin-left: auto;
+      @media (max-width: $breakpoint-tablet) {
+        width:100%;
+      }
+      p{
+        max-width:765px;
+        color:$grey;
+        @media (max-width: $breakpoint-tablet) {
+          max-width:100%;
+        }
+      }
+    }
+  }

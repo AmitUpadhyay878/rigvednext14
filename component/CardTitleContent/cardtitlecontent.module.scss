@@ -1,0 +1,163 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.cardContentRows{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px 30px;
+    @media(max-width:$breakpoint-laptop) {
+        gap: 40px 20px;
+    }
+    @media(max-width:$breakpoint-tablet-sm) {
+        grid-template-columns:repeat(2,1fr);
+        gap: 30px 20px;
+    }
+    @media(max-width:$breakpoint-mobile) {
+        grid-template-columns:repeat(1,1fr);
+    }
+    .cardContentCols{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        min-height:295px;
+        transition:0.3s all ease-in-out;
+        @media(max-width:$breakpoint-tablet) {
+            min-height: 250px;
+        }
+        @media(max-width:$breakpoint-tablet-sm) {
+            min-height: 200px;
+        }
+        @media(max-width:$breakpoint-mobile) {
+            min-height: 180px;
+        }
+        .cardContentWrap{
+            background-color:$white;
+            box-shadow: 27px 24px 76.69999694824219px 0px #0000001A;
+            padding:30px 35px 30px;
+            min-height:264px;
+            border: 1px solid #D7D7D7;
+            border-radius:10px;
+            text-align: center;
+            transition:0.3s all ease-in-out;
+            @media(max-width:$breakpoint-desktop-lg) {
+                padding: 30px 30px 25px;
+            }
+            @media(max-width:$breakpoint-laptop) {
+                padding: 25px 25px 25px;
+                min-height: 230px;
+            }
+            @media(max-width:$breakpoint-tablet) {
+                padding: 20px 20px 20px;
+                min-height: 200px;
+            }
+            @media(max-width:$breakpoint-tablet-sm) {
+                min-height: 160px;
+            }
+            @media(max-width:$breakpoint-mobile) {
+                min-height: 140px;
+            }
+            .cardContentTitleWrap{
+                text-align: center;
+                margin-top: -30px;
+                transform: translateY(-50%);
+                h4{
+                    font-size:22px;
+                    line-height:1;
+                    background-color:$black;
+                    color:$white;
+                    display:inline-flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    padding:19px 20px;
+                    border-radius:10px;
+                    @media(max-width:$breakpoint-desktop-lg) {
+                        font-size:18px;
+                    }
+                    @media(max-width:$breakpoint-laptop) {
+                        padding:17px 16px;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        padding: 14px 12px;
+                        font-size:16px;
+                    }
+                    @media(max-width:$breakpoint-mobile-sm) {
+                        font-size:14px;
+                    }
+                }
+            }
+            p{
+                transition:0.3s all ease-in-out;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+        &:nth-child(1){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#0096E7;
+                }
+            }
+        }
+        &:nth-child(2){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#6C12CA;
+                }
+            }
+        }
+        &:nth-child(3){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#CC2E6E;
+                }
+            }
+        }
+        &:nth-child(4){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#D914FA;
+                }
+            }
+        }
+        &:nth-child(5){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#FBB225;
+                }
+            }
+        }
+        &:nth-child(6){
+            .cardContentTitleWrap{
+                h4{
+                    background-color:#1D3499;
+                }
+            }
+        }
+
+        &:hover{
+            .cardContentWrap{
+                background:$PrimaryGradint;
+                p{
+                    margin-top: 30px;
+                    color:$white;
+                    @media(max-width:$breakpoint-tablet-sm) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .cardContentTitleWrap{
+                margin-top: 0;
+                transform:none;
+                h4{
+                    background-color:$white;
+                    color:$black;
+                }
+            }
+
+        }
+
+    }
+}

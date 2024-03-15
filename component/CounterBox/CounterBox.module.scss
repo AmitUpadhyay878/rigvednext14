@@ -1,0 +1,92 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.aboutCounterBox{
+  .counterWrapper{
+    background-color: $white;
+    box-shadow: 24px 34px 73.1px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    @media (max-width: $breakpoint-desktop-lg) {
+      padding: 30px;
+    }
+    @media (max-width: $breakpoint-tablet-sm) {
+      gap: 30px 0;
+    }
+    @media (max-width: $breakpoint-mobile-xs) {
+      gap: 25px 0;
+      padding: 15px;
+    }
+    li{
+      border-right: 0.50px solid #C8C8C8;
+      text-align: center;
+      width: 20%;
+      @media (max-width: $breakpoint-tablet-sm) {
+        width: 33.33%;
+        &:nth-child(3){
+          border: none;
+        }
+      }
+      @media (max-width: $breakpoint-mobile-sm) {
+        width: 50%;
+        &:nth-child(3){
+          border-right: 0.5px solid #C8C8C8;
+        }
+        &:nth-child(even){
+          border: none;
+        }
+      }
+      @media (max-width: $breakpoint-mobile-xs) {
+        padding: 0 10px;
+      }
+      &:last-child{
+        border: none;
+      }
+      h4{
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 700;
+          font-family: var(--font-geologica);
+          background: linear-gradient(90.1deg, #AA2F88 0.1%, #DD4057 24.56%, #CC2E6E 52.01%, #F07745 76.47%, #C738CA 99.93%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+          margin-bottom: 10px;
+          display: inline-block;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 30px;
+            line-height: 40px;
+          }
+          @media (max-width: $breakpoint-mobile-sm){
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 5px;
+          }
+      }
+      span{
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 18px;
+        color: $black;
+        font-weight: 400;
+        max-width: 170px;
+      }
+
+
+    }
+  }
+  }
+.aboutUsCounter{
+ padding-bottom: 50px;
+ position: relative;
+ z-index: 1;
+ margin-top: 30px;
+ @media(max-width:$breakpoint-mobile) {
+  padding-bottom: 0px;
+}
+}

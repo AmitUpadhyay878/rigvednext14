@@ -1,0 +1,14 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.jobListingSection{
+    .ListingWrapper{
+        .LoadMore{
+            text-align: center;
+            margin-top: 60px;
+            @media(max-width: $breakpoint-mobile) {
+                margin-top: 40px;
+            }
+        }
+    }
+}

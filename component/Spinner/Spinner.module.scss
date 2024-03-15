@@ -1,0 +1,25 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.spinnerWrap{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto;
+    animation: rotate 2s linear 0s infinite;
+    span{
+        background:$PrimaryGradint;
+        margin: auto;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@keyframes rotate 
+{
+    0%{rotate: 0deg; transform: scale(0.6);}
+    50%{ rotate: 100deg; transform: scale(0.4);}    
+    100%{rotate: 360deg; transform: scale(0.6);}
+}

@@ -1,0 +1,146 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.contactInfoSection{
+    padding-top: 100px;
+    position: relative;
+    z-index:1;
+    @media (max-width:$breakpoint-tablet) {
+        padding-top: 80px;
+    }
+    @media (max-width:$breakpoint-mobile-sm) {
+        padding-top: 60px;
+    }
+    .contactInfoRow{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:60px;
+        max-width:1200px;
+        margin:0 auto;
+        @media (max-width:$breakpoint-desktop-lg) {
+            gap:20px;
+            max-width:1100px;
+        }
+        @media (max-width:$breakpoint-laptop) {
+            max-width:1000px;
+        }
+        @media (max-width:$breakpoint-tablet) {
+            max-width: calc(100% - 100px);
+        }
+        @media (max-width:$breakpoint-tablet-sm) {
+            grid-template-columns:repeat(2,1fr);
+        }
+        @media (max-width:$breakpoint-mobile-sm) {
+            grid-template-columns:repeat(1,1fr);
+            max-width:calc(100% - 20px);
+        }
+        .contactInfoCols{
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #D7D7D7;
+            border-radius:10px;
+            box-shadow: 27px 24px 76.69999694824219px 0px #0000001A;
+            background-color:$white;
+            transition:0.3s all ease-in-out;
+            position: relative;
+            &:hover{
+                border-color:#cf336c;
+                box-shadow:none;
+            }
+            .link{
+                position:absolute;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                z-index:1;
+            }
+            @media (max-width:$breakpoint-laptop) {
+                padding:30px 20px;
+            }
+            @media (max-width:$breakpoint-tablet-sm) {
+                &:last-child{
+                    grid-column: 1/3;
+                }
+            }
+            @media (max-width:$breakpoint-mobile-sm) {
+                &:last-child{
+                    grid-column: 1;
+                }
+            }
+            .contactInfoBoxwrap{
+                .contactInfoIcon{
+                    i{
+                        width:80px;
+                        height:80px;
+                        background:$PrimaryGradint;
+                        border-radius:50%;
+                        color:$white;
+                        display:flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        margin:0 auto;
+                        font-size:25px;
+                        @media (max-width:$breakpoint-laptop) {
+                            width:70px;
+                            height:70px;
+                        }
+                    }
+                }
+                p{
+                    font-family: var(--font-dolceVitaHeavy);
+                    font-size:14px;
+                    line-height:1.2;
+                    color:$lightGrey;
+                    margin:30px 0 12px;
+                    @media (max-width:$breakpoint-mobile-sm) {
+                        margin:20px 0 10px;
+                    }
+                }
+                a{
+                    font-weight:400;
+                    font-size:16px;
+                    line-height:1.5;
+                    color:$black;
+                }
+            }
+        }
+    }
+}
+
+
+.contactPgSection{
+    margin-top:-135px;
+    .contactPgRow{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color:$lightCream;
+        padding: 250px 120px 120px 50px;
+        border-radius:10px;
+        gap:20px;
+        @media (max-width:$breakpoint-desktop) {
+            padding: 200px 80px 60px 50px;
+        }
+        @media (max-width:$breakpoint-tablet-sm) {
+            gap:30px;
+            padding: 180px 60px 50px;
+        }
+        @media (max-width:$breakpoint-mobile) {
+            padding: 150px 30px 50px;
+        }
+        @media (max-width:$breakpoint-mobile-xs) {
+            padding: 150px 20px 30px;
+        }
+        >*{
+            width:calc(50% - 10px);
+            @media (max-width:$breakpoint-tablet-sm) {
+                width:100%;
+            }
+        }
+        .contactPgLeft{
+            text-align: center;
+        }
+    }
+}

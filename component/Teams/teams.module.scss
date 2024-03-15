@@ -1,0 +1,165 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+
+
+
+.teamClientSliderWrap{
+    max-width:1508px;
+    margin-left: auto;
+    margin-top: -270px;
+    overflow: hidden;
+    @media (max-width: $breakpoint-tablet) {
+        margin-top:30px;
+        padding:0 100px;
+        margin-right: auto;
+    }
+    @media (max-width: $breakpoint-tablet-sm) {
+        padding: 0 19vw;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0 10vw;
+    }
+    @media (max-width: $breakpoint-mobile-sm) {
+        padding: 0 5vw;
+    }
+    @media (max-width: $breakpoint-mobile-xs) {
+        padding: 0 2vw;
+    }
+   
+    .teamClientSlider{
+        background-color:$white;
+        border-radius:10px;
+        border: 1px solid #E9E9E9;
+        padding:55px 50px;
+        // max-width:638px;
+        box-shadow: 0px 14px 22px 0px rgba($black,0.1);
+        transition:0.3s all ease-in-out;
+        margin:100px 0px 150px;
+        @media (max-width: $breakpoint-desktop-lg) {
+            max-width:600px;
+            margin:80px 0px 100px;
+            padding:40px 30px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+            margin:0 0px 100px;
+        }
+        @media (max-width: $breakpoint-mobile-sm) {
+            padding:20px 30px;
+            margin:0 0px 60px;
+        }
+        &:hover{
+            border-color:$primary;
+        }
+        .teamClientSliderContent{
+            position: relative;
+            & > p{
+                font-weight:400;
+                font-size:16px;
+                line-height:1.9;
+                color:$secondary;
+                padding-top: 21px;
+                position: relative;
+                @media (max-width: $breakpoint-mobile-sm) {
+                    padding-top: 10px;
+                }
+                &::before{
+                    content:'';
+                    background-image: url("data:image/svg+xml,%3Csvg width='57' height='49' viewBox='0 0 57 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.5297 48.8348C16.8835 48.225 14.3144 46.8854 12.4553 45.6677C10.2311 44.2107 7.17516 41.432 5.6533 39.4826C2.91976 35.9814 1.48975 32.4202 0.668041 27.0673C0.115409 23.4677 0.0761106 22.5539 0.0251215 12.1061C-0.0290961 0.994637 -0.0785256 1.69209 0.825011 0.811729C1.69682 -0.0379221 1.18104 0.000263112 11.8002 0.000262198C22.0565 0.000261314 21.6974 -0.0201282 22.5447 0.609735C22.7612 0.77051 23.0734 1.12634 23.2389 1.40037L23.5395 1.89875L23.5696 11.3657L23.5999 20.8326L23.3593 21.3776C23.0769 22.0173 22.3017 22.7303 21.7162 22.8887C21.4762 22.9536 19.4761 22.9981 16.7763 22.9984L12.2397 22.9991L12.2397 23.6812C12.2397 25.2344 12.6941 27.8703 13.263 29.6167C14.0193 31.9385 15.1732 33.8105 16.8446 35.4272C18.2083 36.7463 19.7874 37.7938 22.0071 38.8522C23.6303 39.626 23.8738 39.818 24.3198 40.6763C24.4379 40.9035 24.5166 41.3086 24.5205 41.709C24.526 42.2887 24.4519 42.5241 23.9036 43.6676C21.8171 48.0191 21.6464 48.2952 20.7749 48.7285C20.1357 49.0462 19.2179 49.0896 18.5297 48.8348ZM51.4507 48.9143C50.8337 48.8033 47.9326 47.4199 46.3617 46.4876C41.5957 43.6591 37.8755 39.8696 35.6985 35.626C34.1066 32.523 33.3181 29.3884 32.7628 23.9548C32.6151 22.5109 32.5728 20.3519 32.533 12.2155C32.4779 0.982049 32.428 1.69339 33.3327 0.811727C34.2046 -0.037818 33.6894 0.000260312 44.3021 0.000259397C54.6464 0.000258506 54.2838 -0.0216569 55.125 0.653987C55.3456 0.831252 55.6559 1.23004 55.8145 1.5402L56.1029 2.10411L56.1004 11.4938C56.098 20.7057 56.0936 20.8928 55.8712 21.3718C55.6106 21.933 55.213 22.3701 54.6556 22.7083C54.275 22.9394 54.1554 22.9461 49.4804 22.9991L44.6949 23.0533L44.7288 23.9212C44.8167 26.1628 45.372 28.8306 46.1432 30.7152C46.9362 32.6529 47.886 34.0664 49.3272 35.4537C50.6389 36.7162 51.978 37.6159 54.0801 38.6465C56.0953 39.6345 56.6585 40.0898 56.8866 40.9152C57.1566 41.8921 57.0144 42.3843 55.6857 45.0758C54.9442 46.5778 54.2861 47.7606 54.0323 48.0474C53.3875 48.7761 52.4438 49.093 51.4507 48.9143Z' fill='%23C8C8C8' fill-opacity='0.2'/%3E%3C/svg%3E%0A");
+                    width:57px;
+                    height:49px;
+                    background-repeat:no-repeat;
+                    background-size: cover;
+                    position:absolute;
+                    left:-11px;
+                    top:0;
+                    @media (max-width: $breakpoint-desktop-xl) {
+                        width:47px;
+                        height:40px;
+                    }
+                    @media (max-width: $breakpoint-mobile-sm) {
+                        width:37px;
+                        height:30px;
+                    }
+                }
+                &::after{
+                    content:'';
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='71' height='61' viewBox='0 0 71 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M47.9191 60.5958C49.9697 59.8391 53.1698 58.177 55.4855 56.666C58.256 54.8581 62.0625 51.4102 63.9582 48.9914C67.3631 44.647 69.1443 40.2283 70.1679 33.5862C70.8562 29.1198 70.9052 27.9859 70.9687 15.0221C71.0362 1.23473 71.0978 2.10014 69.9724 1.00778C68.8864 -0.0464899 69.5289 0.000896327 56.3016 0.000895188C43.5262 0.000894087 43.9734 -0.0244126 42.918 0.757135C42.6484 0.956628 42.2594 1.39815 42.0533 1.73818L41.6789 2.35658L41.6413 14.1034L41.6036 25.8501L41.9033 26.5263C42.2551 27.3201 43.2207 28.2047 43.9499 28.4014C44.2489 28.4819 46.7403 28.5371 50.1032 28.5375L55.7541 28.5383L55.7541 29.3847C55.7541 31.3119 55.188 34.5826 54.4794 36.7495C53.5374 39.6305 52.1001 41.9533 50.0181 43.9594C48.3195 45.5961 46.3526 46.8959 43.5876 48.2092C41.5658 49.1694 41.2625 49.4076 40.707 50.4725C40.5598 50.7545 40.4618 51.2572 40.4569 51.754C40.45 52.4732 40.5424 52.7653 41.2253 54.1843C43.8243 59.5836 44.0369 59.9262 45.1225 60.4638C45.9187 60.8581 47.0619 60.912 47.9191 60.5958ZM6.9123 60.6944C7.68082 60.5567 11.2945 58.8402 13.2513 57.6833C19.1878 54.1736 23.8218 49.4716 26.5335 44.206C28.5164 40.3557 29.4986 36.4663 30.1903 29.7242C30.3741 27.9325 30.4268 25.2537 30.4765 15.1578C30.5451 1.21911 30.6073 2.10175 29.4803 1.00777C28.3943 -0.0463599 29.036 0.000892839 15.8167 0.0008917C2.93175 0.00089059 3.3834 -0.0263043 2.33559 0.812048C2.06074 1.032 1.67427 1.52683 1.47666 1.91168L1.11751 2.61138L1.12055 14.2623C1.1236 25.6926 1.12902 25.9248 1.40608 26.5191C1.73071 27.2155 2.2259 27.7578 2.92023 28.1775C3.39435 28.4643 3.54328 28.4726 9.36652 28.5383L15.3274 28.6056L15.2852 29.6825C15.1757 32.4639 14.4841 35.7741 13.5233 38.1126C12.5356 40.517 11.3526 42.2708 9.55733 43.9922C7.9235 45.5588 6.25542 46.6752 3.63703 47.954C1.12693 49.1799 0.425386 49.7448 0.141244 50.7689C-0.195029 51.9811 -0.0179436 52.5918 1.63711 55.9315C2.5608 57.7953 3.38048 59.2628 3.69665 59.6188C4.49983 60.5229 5.67522 60.9161 6.9123 60.6944Z' fill='%23C8C8C8' fill-opacity='0.2'/%3E%3C/svg%3E%0A");
+                    width:71px;
+                    height:61px;
+                    background-repeat:no-repeat;
+                    background-size: cover;
+                    position:absolute;
+                    right:0;
+                    bottom:-40px;
+                    @media (max-width: $breakpoint-desktop-xl) {
+                        width:50px;
+                        height:42px;
+                        bottom:-10px;
+                    }
+                    @media (max-width: $breakpoint-mobile-sm) {
+                        width:40px;
+                        height:32px;
+                    }
+                }
+            }
+            .teamClientSliderTeam{
+                display:flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-top: 44px;
+                gap:20px;
+                @media (max-width: $breakpoint-desktop-xl) {
+                    margin-top: 30px;
+                }
+                @media (max-width: $breakpoint-mobile-sm) {
+                    gap:10px;
+                    margin-top: 25px;
+                }
+                .teamClientTeamThumb{
+                    img{
+                        width:66px;
+                        height:66px;
+                        border-radius:50%;
+                        object-fit: cover;
+                        object-position: center;
+                        overflow: hidden;
+                        display: block;
+                        background-image: url("data:image/svg+xml,%3Csvg width='67' height='67' viewBox='0 0 67 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='33.2746' cy='33.7258' r='32.8785' stroke='url(%23paint0_linear_517_8802)' stroke-width='0.792253' stroke-dasharray='14.26 14.26'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_517_8802' x1='1.40825e-07' y1='39.477' x2='66.5513' y2='39.5943' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23AA2F88'/%3E%3Cstop offset='0.245' stop-color='%23DD4057'/%3E%3Cstop offset='0.52' stop-color='%23CC2E6E'/%3E%3Cstop offset='0.765' stop-color='%23F07745'/%3E%3Cstop offset='1' stop-color='%23C738CA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                        background-repeat:no-repeat;
+                        background-size: cover;
+                        padding:6px;
+                        @media (max-width: $breakpoint-mobile-sm) {
+                            width:50px;
+                            height:50px;
+                        }
+                    }
+                }
+                .teamClientTeamName{
+                    h4{
+                        font-weight:700;
+                        font-size:18px;
+                        line-height:1.2;
+                        background:$PrimaryGradint;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        @media (max-width: $breakpoint-mobile-sm) {
+                            font-size:16px;
+                        }
+                    }
+                    p{
+                        margin-top: 7px;
+                        font-weight:400;
+                        font-size:12px;
+                        line-height:1.2;
+                        color:$grey;
+                        @media (max-width: $breakpoint-mobile-sm) {
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

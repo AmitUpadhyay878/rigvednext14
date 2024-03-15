@@ -1,0 +1,400 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.serviceOfferSection{
+    position: relative;
+    &::before , &::after{
+        content: '';
+        position: absolute;
+        width: 615px;
+        height: 613px;
+        background: rgba(197, 167, 240, 0.32);
+        opacity: 0.7;
+        filter: blur(180.9px);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        @media (max-width: $breakpoint-desktop-lg) {
+            width: 470px;
+            height: 430px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          display: none;
+        }
+    }
+    &::before{
+        left: 0;
+        top: 0;
+    }
+    &::after{
+        right: 0;
+        bottom: -300px;
+    }
+    .serviceListRowswrap{
+        padding-top: 60px;
+        @media(max-width:$breakpoint-tablet-sm) {
+            padding-top: 40px;
+        }
+        ul{
+            li{
+                span{
+                    &::before{
+                        background: $PrimaryGradint;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.frameWorkSection{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 615px;
+        height: 613px;
+        left: -200px;
+        bottom: -220px;
+        background: rgba(197, 167, 240, 0.32);
+        opacity: 0.7;
+        filter: blur(180.9px);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        @media (max-width: $breakpoint-desktop-lg) {
+            width: 470px;
+            height: 430px;
+            bottom: -120px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          display: none;
+        }
+    }
+    .framewrokWrapper{
+        margin-top: 60px;
+        text-align: center;
+        position: relative;
+        @media(max-width:$breakpoint-tablet-sm) {
+            margin-top: 40px;
+        }
+        .frameworkBox{
+            display: inline-block;
+            padding: 100px 0 95px;
+            position: relative;
+            @media(max-width:$breakpoint-desktop-xl) {
+                padding: 90px 0 85px;
+            }
+            @media(max-width:$breakpoint-desktop-lg) {
+                padding: 75px 0 70px;
+            }
+            @media(max-width:$breakpoint-tablet-sm) {
+                padding: 0;
+                display: block;
+            }
+
+            .frameworkCenterContent{
+                display: inline-block;
+                position: relative;
+                @media(max-width:$breakpoint-desktop-lg) {
+                    max-width: 320px;
+                }
+                @media(max-width:$breakpoint-tablet-sm) {
+                    display: block;
+                    max-width: 100%;
+                    background: $PrimaryGradint;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-bottom: 30px;
+                }
+                img{
+                    @media(max-width:$breakpoint-tablet-sm) {
+                        display: none;
+                    }
+                }
+                .Title{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    @media(max-width:$breakpoint-desktop-lg) {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                    @media(max-width:$breakpoint-tablet-sm){
+                        position: static;
+                        transform: none;
+                        color: $white;
+                        background: none;
+                        -webkit-text-fill-color:$white;
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            .frameworkContentWrapper{
+                @media(max-width:$breakpoint-tablet-sm){
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 0 20px;
+                }
+                @media(max-width:$breakpoint-mobile) {
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .innerContent{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 45px;
+                    position: absolute;
+                    width: 100%;
+                    @media(max-width:$breakpoint-desktop-xl) {
+                        column-gap: 40px;
+                    }
+                    @media(max-width:$breakpoint-desktop-lg) {
+                        column-gap: 35px;
+                    }
+                    @media(max-width:$breakpoint-tablet-sm) {
+                        position: relative;
+                        top: unset !important;
+                        left: unset !important;
+                        right: unset !important;
+                        bottom: unset !important;
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    .roundedShape{
+                        width: 100px;
+                        height: 100px;
+                        flex-shrink: 0;
+                        background: radial-gradient(99.47% 99.47% at 85.74% 14.94%, #FFFFFF 20%, #FCFCFC 59%, #F5F5F5 79%, #E8E8E8 94%, #E0E0E0 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        border: 11px solid #C0C662;
+                        font-size: 24px;
+                        line-height: 30px;
+                        font-weight: 700;
+                        color: rgba($color: $black, $alpha: 0.2);
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            width: 90px;
+                            height: 90px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            width: 75px;
+                            height: 75px;
+                            border: 7px solid #C0C662;
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+                        @media(max-width:$breakpoint-tablet-sm){
+                            width: 65px;
+                            height: 65px;
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                    }
+                    p{
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: $black;
+                        position: relative;
+                        white-space: nowrap;
+                        text-align: left;
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            font-size:20px;
+                            line-height: 26px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            font-size:18px;
+                            line-height: 24px;
+                        }
+                        @media (max-width: $breakpoint-laptop) {
+                            white-space: normal;
+                        }
+                        @media(max-width:$breakpoint-tablet-sm){
+                            font-size:16px;
+                            line-height: 22px;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #C0C662;
+                            border-radius: 50%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -25px;
+                            @media(max-width:$breakpoint-desktop-xl) {
+                                // top: 9px;
+                                width: 8px;
+                                height: 8px;
+                            }
+                            @media(max-width:$breakpoint-desktop-lg) {
+                                left: -20px;
+                            }
+                        }
+                    }
+                    &:nth-child(1), &:nth-child(6),&:nth-child(7),&:nth-child(8){
+                        flex-direction: row-reverse;
+                        @media(max-width:$breakpoint-tablet-sm) {
+                            flex-direction: row ;
+                        }
+                        p{
+                            text-align: right;
+                            @media(max-width:$breakpoint-tablet-sm) {
+                                text-align: left;
+                            }
+                            &::after{
+                                left: unset;
+                                right: -25px;
+                                @media(max-width:$breakpoint-desktop-lg) {
+                                    right: -20px;
+                                }
+                                @media(max-width:$breakpoint-tablet-sm) {
+                                    right: unset;
+                                    left: -20px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        top: 0;
+                        right: 220px;
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            right: 200px;
+                        }
+                    }
+                    &:nth-child(2){
+                        left: 220px;
+                        top: 0;
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            left: 200px;
+                        }
+                        .roundedShape{
+                            border-color: #F8CB4B;
+                        }
+                        p{
+                            &::after{
+                                background-color: #F8CB4B;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        top: 155px;
+                        left: 100%;
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            top: 150px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            top: 135px;
+                        }
+                        .roundedShape{
+                            border-color: #F58A63;
+                        }
+                        p{
+                            &::after{
+                                background-color: #F58A63;
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        top: unset;
+                        left: 100%;
+                        bottom: 155px;
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            bottom: 150px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            bottom: 135px;
+                        }
+                        .roundedShape{
+                            border-color: #3EB2D2;
+                        }
+                        p{
+                            &::after{
+                                background-color: #3EB2D2;
+                            }
+                        }
+                    }
+                    &:nth-child(5){
+                        top: unset;
+                        left: 220px;
+                        bottom: 0;
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            left: 200px;
+                        }
+                        .roundedShape{
+                            border-color: #56BBAF;
+                        }
+                        p{
+                            &::after{
+                                background-color: #56BBAF;
+                            }
+                        }
+                    }
+                    &:nth-child(6){
+                        top: unset;
+                        bottom: 0;
+                        right: 220px;
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            right: 200px;
+                        }
+                        .roundedShape{
+                            border-color: #758EE1;
+                        }
+                        p{
+                            &::after{
+                                background-color: #758EE1;
+                            }
+                        }
+                    }
+                    &:nth-child(7){
+                        top: unset;
+                        right: 100%;
+                        bottom: 155px;
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            bottom: 150px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            bottom: 135px;
+                        }
+                        .roundedShape{
+                            border-color: #9587CB;
+                        }
+                        p{
+                            &::after{
+                                background-color: #9587CB;
+                            }
+                        }
+                    }
+                    &:nth-child(8){
+                        top: 155px;
+                        right: 100%;
+                        @media(max-width:$breakpoint-desktop-xl) {
+                            top: 150px;
+                        }
+                        @media(max-width:$breakpoint-desktop-lg) {
+                            top: 135px;
+                        }
+                        .roundedShape{
+                            border-color: #DC5B7E;
+                        }
+                        p{
+                            &::after{
+                                background-color: #DC5B7E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

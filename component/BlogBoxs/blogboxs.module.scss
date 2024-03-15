@@ -1,0 +1,76 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.blogBoxCols{
+    border: 1px solid #C9C9C9;
+    border-radius:10px;
+    padding: 33px 32px 55px;
+    transition:0.3s all ease-in-out;
+    @media (max-width: $breakpoint-laptop) {
+        padding: 30px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        padding: 22px;
+    }
+    &:hover{
+        border-color:transparent;
+        box-shadow: 27px 24px 76.69999694824219px 0px #0000001A;
+    }
+    .blogBoxThumb{
+        border-radius:10px;
+        overflow: hidden;
+        img{
+            width:100%;
+            display: block;
+            transition:0.3s all ease-in-out;
+        }
+    }
+    .blogBoxContent{
+        margin-top: 18px;
+        h3{
+            font-family: var(--font-dolceVitaHeavy);
+            font-size:24px;
+            line-height:1.2;
+            @media (max-width: $breakpoint-desktop-lg) {
+                font-size:22px;
+            }
+            @media (max-width: $breakpoint-tablet) {
+                font-size:20px;
+            }
+            a{
+                color:$black;
+                transition:0.3s all ease-in-out;
+            }
+        }
+        p{
+            margin-top: 34px;
+            font-size:14px;
+            line-height:1.25;
+            color:$grey;
+            font-weight:400;
+            @media (max-width: $breakpoint-tablet) {
+                margin-top: 20px;
+            }
+            @media (max-width: $breakpoint-mobile) {
+                margin-top: 12px;
+            }
+        }
+    }
+    &:hover{
+        .blogBoxThumb{
+            img{
+                transform:scale(1.2);
+            }
+        }
+        .blogBoxContent{
+            h3{
+               a{
+                background: $PrimaryGradint;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+               }
+            }
+        }
+    }
+}

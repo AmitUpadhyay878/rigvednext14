@@ -1,0 +1,215 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.serviceOfferSection{
+    position: relative;
+    &::before , &::after{
+        content: '';
+        position: absolute;
+        width: 615px;
+        height: 613px;
+        background: rgba(197, 167, 240, 0.32);
+        opacity: 0.7;
+        filter: blur(180.9px);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        @media (max-width: $breakpoint-desktop-lg) {
+            width: 470px;
+            height: 430px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          display: none;
+        }
+    }
+    &::before{
+        left: 0;
+        top: 0;
+    }
+    &::after{
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .serviceListRowswrap{
+        padding-top: 60px;
+        @media(max-width:$breakpoint-tablet-sm) {
+            padding-top: 40px;
+        }
+        ul{
+            li{
+                span{
+                    &::before{
+                        background: $PrimaryGradint;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.treeViewSection{
+    h2{
+        margin-bottom: 60px;
+        text-align: center;
+        background:$PrimaryGradint;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        @media(max-width:$breakpoint-laptop) {
+            margin-bottom: 40px;
+        }
+        @media(max-width:$breakpoint-tablet) {
+            margin-bottom: 30px;
+            background-clip: unset;
+            color: #ffffff;
+            -webkit-text-fill-color: #ffffff;
+            padding: 10px;
+            border-radius: 6px;
+        }
+    }
+    .treeViewBoxwrap{
+        margin:0 auto;
+        max-width:1337px;
+        position: relative;
+        
+        @media(max-width:$breakpoint-laptop) {
+            max-width:1110px;
+        }
+        .treeViewBoxThumb{
+            img{display: block;}
+            @media(max-width:$breakpoint-tablet) {
+                display:none;
+            }
+        }
+        .treeViewBoxContentLists{
+            @media(max-width:$breakpoint-tablet) {
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                gap:20px 20px;
+                counter-reset: section;
+            }
+            @media(max-width:$breakpoint-mobile) {
+                grid-template-columns:repeat(1,1fr);
+            }
+            .treeViewBoxLists{
+                position:absolute;
+                @media(max-width:$breakpoint-tablet) {
+                    position: relative;
+                }
+                h5{
+                    font-family: var(--font-geologica);
+                    font-weight:400;
+                    color:$black;
+                    font-size:22px;
+                    line-height:1.2;
+                    max-width:170px;
+                    text-align: center;
+                    @media(max-width:$breakpoint-desktop-lg) {
+                        font-size:20px;
+                    }
+                    @media(max-width:$breakpoint-laptop) {
+                        font-size:18px;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        max-width:100%;
+                        text-align:left;
+                        display:flex;
+                        gap:10px;
+                        line-height:1.4;
+
+                    }
+                    @media(max-width:$breakpoint-mobile) {
+                        font-size:16px;
+                    }
+                    &::before{
+                        @media(max-width:$breakpoint-tablet) {
+                            counter-increment: section;
+                            content: "" counter(section) ".";
+                        }
+                    }
+                }
+                &:first-child{
+                    top: 32%;
+                    left: 5.45%;
+                    @media(max-width:$breakpoint-laptop) {
+                        left: 4%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+                &:nth-child(2){
+                    top: 18%;
+                    left: 28.5%;
+                    @media(max-width:$breakpoint-laptop) {
+                        left:28%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+                &:nth-child(3){
+                    top: 18%;
+                    left: 57%;
+                    @media(max-width:$breakpoint-laptop) {
+                        left:55.5%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+                &:nth-child(4){
+                    top: 32%;
+                    right:8%;
+                    @media(max-width:$breakpoint-laptop) {
+                        right:6%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        right:auto;
+                    }
+                }
+                &:nth-child(5){
+                    top: 67%;
+                    left: 24%;
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+                &:nth-child(6){
+                    top:43%;
+                    left:42.8%;
+                    @media(max-width:$breakpoint-laptop) {
+                        left:41.5%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+                &:nth-child(7){
+                    top:67%;
+                    left:63.5%;
+                    @media(max-width:$breakpoint-laptop) {
+                        left:62%;
+                    }
+                    @media(max-width:$breakpoint-tablet) {
+                        top:auto;
+                        left:auto;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+

@@ -1,0 +1,61 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.partnersSection{
+    .partnersContent{
+      position: relative;
+      .partnersWrapper{
+        margin-top: 70px;
+        position: relative;
+        background-color: $white;
+        @media (max-width:$breakpoint-tablet) {
+          margin-top: 50px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          margin-top: 30px;
+        }
+        .partnersList{
+          display: grid;
+          grid-template-columns: repeat(6,1fr);
+          @media (max-width: $breakpoint-laptop) {
+            grid-template-columns: repeat(5,1fr);
+          }
+          @media (max-width:$breakpoint-tablet) {
+            grid-template-columns: repeat(4,1fr);
+          }
+          @media (max-width: $breakpoint-mobile-sm) {
+            margin-top: 30px;
+            grid-template-columns: repeat(2,1fr);
+          }
+          li{
+            padding: 20px;
+            min-height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+            @media (max-width: $breakpoint-desktop-lg) {
+              min-height: 180px;
+            }
+            @media (max-width:$breakpoint-mobile) {
+              min-height: 140px;
+            }
+            &:hover{
+              box-shadow: 27px 24px 76.7px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+      .innerBoxShadow{
+        top: 40px;
+        right: -100px;
+        z-index: -1;
+        @media (max-width: $breakpoint-desktop-lg) {
+          right: -60px;
+        }
+        @media (max-width: $breakpoint-laptop) {
+          right: 0px;
+        }
+      }
+    }
+  }

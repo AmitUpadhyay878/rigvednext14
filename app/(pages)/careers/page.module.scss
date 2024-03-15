@@ -1,0 +1,461 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+// .AboutCareersSection{
+//     position: relative;
+//     margin-bottom: 60px;
+//     @media(max-width:$breakpoint-tablet-sm) {
+//         margin-bottom: 20px;
+//     }
+//     @media(max-width:$breakpoint-mobile) {
+//         margin-bottom: 50px;
+//     }
+
+//     .AboutCareersWrapper{
+//         @media(max-width:$breakpoint-mobile) {
+//             display: flex;
+//             flex-direction: column-reverse;
+//         }
+//         .content{
+//             max-width: 1000px;
+//             padding: 150px 0;
+//             @media(max-width:$breakpoint-desktop-xl) {
+//                 max-width: calc(100% - 560px);
+//             }
+//             @media(max-width:$breakpoint-desktop-lg) {
+//                 padding: 100px 0;
+//                 max-width: calc(100% - 510px);
+//             }
+//             @media(max-width:$breakpoint-tablet) {
+//                 padding: 60px 0;
+//                 max-width: calc(100% - 480px);
+//             }
+//             @media(max-width:$breakpoint-tablet-sm) {
+//                 padding: 50px 0;
+//                 max-width: calc(100% - 400px);
+//             }
+//             @media(max-width:$breakpoint-mobile) {
+//                 max-width: 100%;
+//                 padding: 30px 0 0;
+//             }
+//             p{
+//                 font-size: 28px;
+//                 @media(max-width:$breakpoint-desktop-xl) {
+//                     font-size: 24px;
+//                 }
+//                 @media(max-width:$breakpoint-desktop-lg) {
+//                     font-size: 22px;
+//                 }
+//                 @media(max-width:$breakpoint-tablet) {
+//                     font-size: 20px;
+//                 }
+//                 @media(max-width:$breakpoint-tablet-sm) {
+//                     font-size: 18px;
+//                 }
+//                 @media(max-width:$breakpoint-mobile-sm) {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//         .aboutImage{
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             max-width: 697px;
+
+//             @media(max-width:$breakpoint-desktop-xl) {
+//                 max-width: 640px;
+//             }
+//             @media(max-width:$breakpoint-desktop-lg) {
+//                 max-width: 530px;
+//             }
+//             @media(max-width:$breakpoint-tablet) {
+//                 max-width: 460px;
+//             }
+//             @media(max-width:$breakpoint-tablet-sm) {
+//                 max-width: 350px;
+//             }
+//             @media(max-width:$breakpoint-mobile) {
+//                 position: relative;
+//                 top: unset;
+//                 left: unset;
+//                 max-width: 100%;
+//                 text-align: right;
+//             }
+//         }
+//     }
+// }
+// .EmpowermentSection{
+//     position: relative;
+//     .EmpowermentContent{
+//         .exploreBtn{
+//             margin-top: 60px;
+//             @media (max-width: $breakpoint-desktop-lg) {
+//                 margin-top: 40px;
+//             }
+//             @media (max-width: $breakpoint-tablet-sm) {
+//                 margin-top: 30px;
+//             }
+//         }
+//         .roundedInnershadow{
+//             left: -180px;
+//             top: -100px;
+//             z-index: -1;
+//             @media (max-width: $breakpoint-tablet) {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+.idealRoleSection{
+    position: relative;
+    .idealCardsWrapper{
+        .title{
+            margin-bottom: 60px;
+            @media (max-width: $breakpoint-desktop-lg) {
+                margin-bottom: 40px;
+            }
+            @media (max-width: $breakpoint-laptop) {
+                margin-bottom: 20px;
+            }
+        }
+        .roundedInnershadow{
+            right: 0;
+            top: 00px;
+            z-index: -1;
+            @media (max-width: $breakpoint-tablet) {
+                display: none;
+            }
+        }
+    }
+}
+.joinusSection{
+    .joinusBox{
+        background: linear-gradient(90deg, #0081A7 0%, #00AFB9 100%);
+        padding: 110px;
+        border-radius: 10px;
+        position: relative;
+        @media (max-width: $breakpoint-desktop-lg) {
+            padding: 80px;
+        }
+        @media (max-width: $breakpoint-laptop) {
+            padding: 40px;
+        }
+        @media (max-width: $breakpoint-tablet-sm) {
+            padding: 30px;
+        }
+        .content{
+            max-width: 810px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            @media (max-width: $breakpoint-laptop) {
+                max-width: 680px;
+            }
+            @media (max-width: $breakpoint-tablet-sm) {
+                max-width: 100%;
+            }
+            .badge{
+                font-size: 20px;
+                line-height: 23px;
+                font-weight: 500;
+                color: $white;
+                padding: 10px 20px;
+                border: 1px solid rgba($color: $white, $alpha: 0.5);
+                border-radius: 10px;
+                background: rgba(0, 83, 112, 0.4);
+                @media (max-width:$breakpoint-desktop-lg) {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                @media (max-width:$breakpoint-mobile-sm) {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 8px 16px;
+                }
+            }
+            h2{
+                margin: 20px 0 10px;
+                color: $white;
+            }
+            p{
+                color: $white;
+                margin-bottom: 40px;
+                @media (max-width: $breakpoint-laptop) {
+                    margin-bottom: 30px;
+                }
+                @media (max-width: $breakpoint-mobile-sm) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .LeftSideImage{
+            position: absolute;
+            left: 55px;
+            top: 55px;
+            @media (max-width: $breakpoint-desktop-lg) {
+                left: 30px;
+                top: 30px;
+            }
+            @media (max-width: $breakpoint-laptop) {
+                max-width: 190px;
+            }
+            @media (max-width: $breakpoint-tablet-sm) {
+                left: 20px;
+                top: 20px;
+                max-width: 150px;
+            }
+            @media (max-width:$breakpoint-mobile-sm) {
+                left: 15px;
+                top: 15px;
+                max-width: 110px;
+            }
+        }
+        .RightSideImage{
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+            @media (max-width: $breakpoint-desktop-lg) {
+                right: 30px;
+            }
+            @media (max-width: $breakpoint-laptop) {
+                max-width: 250px;
+            }
+            @media (max-width: $breakpoint-tablet-sm) {
+                right: 20px;
+                max-width: 180px;
+            }
+            @media (max-width:$breakpoint-mobile-sm) {
+                right: 15px;
+                max-width: 160px;
+            }
+        }
+    }
+}
+// .engagingSection{
+//     position: relative;
+//     &::before{
+//         content: '';
+//         position: absolute;
+//         width: 615px;
+//         height: 613px;
+//         background: rgba(197, 167, 240, 0.32);
+//         opacity: 0.7;
+//         filter: blur(180.9px);
+//         position: absolute;
+//         border-radius: 50%;
+//         left: 0;
+//         top: -130px;
+//         z-index: -1;
+//         @media (max-width: $breakpoint-desktop-lg) {
+//             width: 530px;
+//             height: 530px;
+//         }
+//         @media (max-width: $breakpoint-tablet) {
+//             display: none;
+//         }
+//     }
+//     .engagingAndImpact{
+
+//         .imapactCardWrapper{
+//             display: grid;
+//             grid-template-columns: repeat(4,1fr);
+//             gap: 30px;
+//             margin-top: 60px;
+//             @media(max-width:$breakpoint-desktop-xl) {
+//                 gap: 20px;
+//             }
+//             @media (max-width: $breakpoint-laptop) {
+//                 grid-template-columns: repeat(2,1fr);
+//                 margin-top: 40px;
+//             }
+//             @media (max-width: $breakpoint-mobile-sm) {
+//                 grid-template-columns: repeat(1,1fr);
+//                 margin-top: 30px;
+//             }
+//             .impactCard{
+//                 background: $white;
+//                 border: 1px solid #C9C9C9;
+//                 box-shadow: 24px 34px 73.1px rgba(0, 0, 0, 0.03);
+//                 border-radius: 10px;
+//                 padding: 60px 30px 30px;
+//                 position: relative;
+//                 overflow: hidden;
+//                 transition: 0.3s ease-in-out;
+//                 @media(max-width:$breakpoint-desktop-xl) {
+//                     padding: 50px 20px 30px;
+//                 }
+//                 @media (max-width: $breakpoint-desktop-lg) {
+//                     padding: 25px 15px 25px;
+//                 }
+
+//                 &::before{
+//                     content: '';
+//                     position: absolute;
+//                     left: 0;
+//                     top: 0;
+//                     width: 100%;
+//                     height: 100%;
+//                     background: $PrimaryGradint;
+//                     opacity: 0;
+//                     z-index: -1;
+//                     transition: 0.3s ease-in-out;
+//                 }
+//                 h4{
+//                     margin-bottom: 30px;
+//                     transition: 0.3s ease-in-out;
+//                     @media(max-width:$breakpoint-desktop-xl) {
+//                         margin-bottom: 20px;
+//                     }
+//                     @media (max-width: $breakpoint-desktop-lg) {
+//                         font-size: 22px;
+//                     }
+//                     @media (max-width: $breakpoint-mobile) {
+//                         font-size: 20px;
+//                         margin-bottom: 15px;
+//                     }
+//                 }
+//                 p{
+//                     font-size: 18px;
+//                     line-height: 30px;
+//                     transition: 0.3s ease-in-out;
+//                     display: -webkit-box;
+//                     -webkit-box-orient: vertical;
+//                     -webkit-line-clamp: 10;
+//                     overflow: hidden;
+//                     @media (max-width: $breakpoint-desktop-lg) {
+//                         font-size: 16px;
+//                     }
+//                     @media (max-width: $breakpoint-mobile) {
+//                         line-height: 26px;
+//                         -webkit-line-clamp: 8;
+//                     }
+//                 }
+//                 &:hover{
+//                     background: transparent;
+//                     &::before{
+//                         opacity: 1;
+//                     }
+//                     h4{
+//                         color: $white;
+//                     }
+//                     p{
+//                         color: rgba($color: $white, $alpha: 0.7);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .RigvedJourneySection{
+//     position: relative;
+//     &::before{
+//         content: '';
+//         position: absolute;
+//         width: 615px;
+//         height: 613px;
+//         background: rgba(197, 167, 240, 0.32);
+//         opacity: 0.7;
+//         filter: blur(180.9px);
+//         position: absolute;
+//         border-radius: 50%;
+//         right: 0;
+//         top: -130px;
+//         z-index: -1;
+//         @media (max-width: $breakpoint-desktop-lg) {
+//             width: 530px;
+//             height: 530px;
+//         }
+//         @media (max-width: $breakpoint-tablet) {
+//             display: none;
+//         }
+//     }
+//     .RigvedJourneyBox{
+//         background: linear-gradient(90deg, #118AB2 0%, #06D6A0 100%);
+//         border-radius: 10px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 67px 125px 67px 90px;
+//         position: relative;
+//         @media(max-width:$breakpoint-desktop-xl) {
+//             padding: 60px 80px;
+//         }
+//         @media(max-width:$breakpoint-desktop-lg) {
+//             padding: 50px 40px;
+//         }
+//         @media (max-width: $breakpoint-tablet) {
+//             padding: 30px;
+//         }
+//         @media (max-width:$breakpoint-mobile-sm) {
+//             padding: 20px 20px 25px;
+//         }
+//         @media (max-width: $breakpoint-mobile) {
+//             flex-direction: column-reverse;
+//         }
+//         .content{
+//             max-width: 870px;
+//             position: relative;
+//             z-index: 1;
+
+//             @media (max-width: $breakpoint-desktop-lg) {
+//                 max-width: 740px;
+//             }
+//             @media (max-width: $breakpoint-laptop) {
+//                 max-width: 650px;
+//             }
+//             @media (max-width: $breakpoint-tablet) {
+//                 max-width: 540px;
+//             }
+//             @media (max-width: $breakpoint-mobile) {
+//                 max-width: 100%;
+//                 margin-top: 20px;
+//                 text-align: center;
+//             }
+//             h3{
+//                 font-size: 30px;
+//                 line-height: 35px;
+//                 color: $white;
+//                 @media (max-width: $breakpoint-desktop-lg) {
+//                     font-size: 26px;
+//                 }
+//                 @media (max-width: $breakpoint-tablet) {
+//                     font-size: 22px;
+//                 }
+//                 @media (max-width:$breakpoint-mobile-sm) {
+//                     font-size: 20px;
+//                 }
+//             }
+//             p{
+//                 font-size: 16px;
+//                 line-height: 20px;
+//                 color: $white;
+//                 margin: 20px 0 30px;
+//                 @media (max-width:$breakpoint-mobile-sm) {
+//                     margin: 15px 0 20px;
+//                 }
+//             }
+//         }
+//         .imageBox{
+//             img{
+//                 @media (max-width: $breakpoint-tablet) {
+//                     max-width: 280px;
+//                 }
+//                 @media (max-width: $breakpoint-tablet-sm) {
+//                     max-width: 250px;
+//                 }
+//                 @media (max-width:$breakpoint-mobile-sm) {
+//                     max-width: 210px;
+//                 }
+//             }
+//         }
+//         .bgImage{
+//             position: absolute;
+//             left: 0;
+//             bottom: 0;
+//         }
+//     }
+// }

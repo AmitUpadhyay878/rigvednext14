@@ -1,0 +1,74 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+
+
+.AboutSolutionSection{
+    .AboutSolutionWapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        @media(max-width:$breakpoint-laptop) {
+            gap: 40px;
+        }
+        @media(max-width:$breakpoint-tablet) {
+            gap: 20px;
+        }
+        @media(max-width:$breakpoint-tablet-sm) {
+           flex-direction: column;
+        //    margin-bottom: 50px;
+        }
+        .imageBox{
+            width: 40%;
+            img{
+                border-radius:10px;
+            }
+            @media(max-width:$breakpoint-tablet-sm) {
+                width: 100%;
+                text-align: center;
+                img{
+                    width: 400px;
+                    border-radius:10px;
+                    @media(max-width:$breakpoint-mobile) {
+                        width: 300px;
+                    }
+                    @media(max-width:$breakpoint-mobile-sm) {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+        .content{
+            width: 60%;
+            @media(max-width:$breakpoint-tablet-sm) {
+                width: 100%;
+            }
+            h3{
+                font-size: 34px;
+                line-height: 43px;
+                color: $black;
+                margin-bottom: 24px;
+                @media(max-width:$breakpoint-desktop-xl) {
+                    font-size: 26px;
+                    line-height: 40px;
+                }
+                @media(max-width:$breakpoint-tablet) {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @media(max-width:$breakpoint-tablet-sm) {
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
+            }
+            p{
+                @media(max-width:$breakpoint-desktop-xl) {
+                    line-height: 1.6;
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,96 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.AboutSection{
+    .aboutWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 80px;
+        @media(max-width:$breakpoint-laptop) {
+            gap: 50px;
+        }
+        @media(max-width:$breakpoint-tablet) {
+            gap: 20px;
+        }
+        @media(max-width:$breakpoint-tablet-sm) {
+           flex-direction: column-reverse;
+        }
+        .content{
+            width: 60%;
+            @media(max-width:$breakpoint-tablet-sm) {
+                width: 100%;
+
+            }
+            h2{
+                background: $PrimaryGradint;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                word-wrap: break-word;
+                color: transparent;
+                margin-bottom: 20px;
+                @media(max-width:$breakpoint-mobile) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .aboutImage{
+            width: 40%;
+            img{
+                border-radius:10px;
+            }
+            @media(max-width:$breakpoint-tablet-sm) {
+                width: 100%;
+                text-align: center;
+                img{
+                    width: 400px;
+                    display: block;
+                    margin: 0 auto;
+                    @media(max-width:$breakpoint-mobile) {
+                        width: 300px;
+                    }
+                    @media(max-width:$breakpoint-mobile-sm) {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+        &.leftImage{
+            flex-direction: row-reverse;
+            gap: 65px;
+            position: relative;
+            @media(max-width:$breakpoint-laptop) {
+                gap: 50px;
+            }
+            @media(max-width:$breakpoint-tablet) {
+                gap: 20px;
+            }
+            @media(max-width:$breakpoint-tablet-sm) {
+                flex-direction: column-reverse;
+             }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 615px;
+                height: 613px;
+                background: rgba(197, 167, 240, 0.32);
+                opacity: 0.7;
+                filter: blur(180.9px);
+                position: absolute;
+                border-radius: 50%;
+                z-index: -1;
+                top: 0;
+                right: -100px;
+                @media (max-width: $breakpoint-desktop-lg) {
+                    width: 370px;
+                    height: 330px;
+                    right: 0px;
+                }
+                @media (max-width: $breakpoint-tablet) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

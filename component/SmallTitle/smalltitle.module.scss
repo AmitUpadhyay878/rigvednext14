@@ -1,0 +1,43 @@
+@import '@/app/scss/variables';
+@import '@/app/scss/partial';
+
+.Smalltitle{
+  padding-bottom: 28px;
+  margin-bottom: 35px;
+  border-bottom:1px solid $black;
+  position: relative;
+  &::after{
+    content:'';
+    position:absolute;
+    background-color:$black;
+    width:1px;
+    height:17px;
+    right:0;
+    bottom:0;
+  }
+  @media(max-width:$breakpoint-laptop) {
+    padding-bottom:22px;
+    margin-bottom:30px;
+  }
+  @media(max-width:$breakpoint-mobile-sm) {
+    padding-bottom:16px;
+    margin-bottom:20px;
+  }
+  span{
+    font-weight:500;
+    font-size:22px;
+    line-height:1.25;
+    background: $PrimaryGradint;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition:0.3s all ease-in-out;
+    @media(max-width:$breakpoint-laptop) {
+      font-size:20px;
+    }
+    @media(max-width:$breakpoint-mobile-sm) {
+      font-size:18px;
+    }
+  }
+
+}
