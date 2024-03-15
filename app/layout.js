@@ -6,7 +6,6 @@ import Footer from "@/component/Footer";
 //import localFont from 'next/font/local'
 import {DolceVitaHeavy} from '../utils/customFonts'
 
-
 const geologica = Geologica({
   weight:["300","400","500"],
   subsets: ['latin'],
@@ -21,7 +20,7 @@ export const metadata = {
   icons: {
     icon: "./favicon.ico"
   },
-   image:'https://rigveditonnetlify.netlify.app/public/images/bannerimage.png',
+   image:`../public/images/bannerimage.png`,
   robots: {
     index: false,
     follow: true,
@@ -40,12 +39,12 @@ export const metadata = {
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text men book.",
     images: [
       {
-        url: "https://rigveditonnetlify.netlify.app/public/images/bannerimage.png",
+        url: `../public/images/bannerimage.png`,
         width: 800,
         height: 600,
       },
       {
-        url: "https://rigveditonnetlify.netlify.app/public/images/bannerimage.png",
+        url: `../public/images/bannerimage.png`,
         width: 1800,
         height: 1600,
         alt: 'Rigved',
