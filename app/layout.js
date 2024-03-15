@@ -20,7 +20,7 @@ export const metadata = {
   icons: {
     icon: "./favicon.ico"
   },
-   image:`../public/images/bannerimage.png`,
+  //  image:`../public/images/bannerimage.png`,
   robots: {
     index: false,
     follow: true,
