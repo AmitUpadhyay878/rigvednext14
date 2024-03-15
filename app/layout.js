@@ -4,7 +4,7 @@ import "./globals.scss";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 //import localFont from 'next/font/local'
-import bannerimage from '../public/images//bannerimage.png'
+import bannerimage from '../public/images/bannerimage.png'
 import {DolceVitaHeavy} from '../utils/customFonts'
 
 const geologica = Geologica({
